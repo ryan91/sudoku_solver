@@ -65,7 +65,7 @@ int solve_sudoku(char** sudoku) {
     unsigned int nx = 0;
     unsigned int ny = 0;
 
-    unsigned int state = STATE_SOLVE;
+    unsigned int state = sudoku[nx][ny] == EMPTY_SQUARE ? STATE_SOLVE : STATE_STEP_FORWARD;
 
     while (1) {
         switch (state) {
