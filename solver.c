@@ -9,7 +9,7 @@
 #define STATE_STEP_BACKWARD 1
 // In this state we try to assign a value to the current square
 #define STATE_SOLVE 2
-// This state is reachen when the Sudoku could not be solved
+// This state is reached when the Sudoku could not be solved
 #define STATE_IRRESOLVABLE 3
 // This state is reached when the Sudoku was solved
 #define STATE_SOLVED 4
@@ -76,7 +76,7 @@ int solve_sudoku(char** sudoku) {
                     state = STATE_STEP_BACKWARD;
                 } else {
                     // assign a value and check if there is a conflict
-                    copy[nx][ny] = copy[nx][ny] + 1;
+                    ++copy[nx][ny];
                     if (sudoku_correct(copy, nx, ny)) {
                         state = STATE_STEP_FORWARD;
                     }
