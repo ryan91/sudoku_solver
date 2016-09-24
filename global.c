@@ -43,3 +43,4 @@ void copy_sudoku(char** source, char** target) {
         }
     }
 }
+

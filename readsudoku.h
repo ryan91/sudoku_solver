@@ -1,4 +1,3 @@
-
 #ifndef READSUDOKU_H_INCLUDED
 #define READSUDOKU_H_INCLUDED
 
@@ -16,3 +15,4 @@
 int readSudoku(const char* file_name, char** sudoku_array);
 
 #endif // READSUDOKU_H_INCLUDED
+

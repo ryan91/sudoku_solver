@@ -10,3 +10,4 @@
 int solve_sudoku(char** sudoku);
 
 #endif // SOLVER_H_INCLUDED
+

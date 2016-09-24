@@ -81,7 +81,5 @@ void print_sudoku(char** sudoku);
  */
 void copy_sudoku(char** source, char** target);
 
-
-
-
 #endif // GLOBAL_H_INCLUDED
+
